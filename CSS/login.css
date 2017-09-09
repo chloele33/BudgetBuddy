@@ -1,8 +1,8 @@
-@import url(https://fonts.googleapis.com/css?family=Catamaran);
+@import url(https://fonts.googleapis.com/css?family=Verdana);
 body {
   background-color:#fff;
   -webkit-font-smoothing: antialiased;
-  font: normal 14px 'Catamaran',sans-serif;
+  font: normal 14px 'Verdana',sans-serif;
 }
 
 p {
@@ -24,6 +24,46 @@ p {
     border-color:#d2d2d2;
     border-width: 5px;
     box-shadow:0 1px 0 #cfcfcf;
+}
+
+.welcome-text {
+  font-size: 30px;
+  padding: 15px;
+  text-align: center;
+}
+
+.number {
+    font-size: 100px;
+}
+
+.animated {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 15px;
+    border-color:#d2d2d2;
+    border-width: 5px;
+
+    /*background: #C9C9C9;*/
+}
+
+.navbar {
+  /*border: 0;
+  background-color: #2d373f;  
+  color: #edf2f7;*/
+
+  height: 50px;
+  width: 100%;
+  /*margin-bottom: 0;*/
+  border-radius: 0;
+  color: #000;
+  background-color: #A0D2FF;
+}
+
+.navbar-brand {
+  color: #000 !important;
+  font-weight: bold;
 }
 
 .btn, .btn-action {

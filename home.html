@@ -3,7 +3,7 @@
 	<head>
 
 	<meta charset="utf-8">
-	<title>Sign In</title>
+	<title>Budget Buddy</title>
 	    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -11,33 +11,40 @@
 		<link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
 		<script src="https://www.gstatic.com/firebasejs/3.6.9/firebase.js"></script>	
 		<link rel="stylesheet" href="css/login.css">
+		<link rel="stylesheet" href="css/animate.css">
 	</head>
 	<body>
-		<div class="container">
-			    <div class="row">
-			        <div class="col-md-offset-4 col-md-5">
-			            <div class="form-login">
-			            	<h3 align = "center">Budget Buddy</h3>
-			            	</br>
-			            	<input type="text" id="txtEmail" class="form-control input-sm chat-input" placeholder="Email" />
-			            	</br>
-			            	<input type="password" id="txtPassword" class="form-control input-sm chat-input" placeholder="Password"/>
-			            	</br>
-			            	<div class="wrapper" align = 'center'>
-			            		<span class="group-btn">
-			            		</br>
-			            		<button id="bLogin" class="btn btn-action btn-lg"> Log In <span class="glyphicon glyphicon-log-in"></span></button>   
-			            		</span>
-			           		</div>
-			           		<br>	
-			           		<div align = 'center' class = "hidden" id = 'errorMessage'><p>Your email/password was incorrect. Please try again.</p></div>
-			           		<div align = 'center' class = "hidden" id = 'noUserMessage'><p>No user was found with email provided.</p></div>
-			            </div>
-			        </div>
-			    </div>
-			</div>
+		<nav class="navbar navbar-inverse" id="navbar">
+	      <div class="container-fluid">
+	        <div class="navbar-header">
+	          <a class="navbar-brand" href="home.html">Budget Buddy</a>
+	        </div>
+	        <div id="navbar" class="navbar-collapse collapse">
+	          <ul class="nav navbar-nav navbar-right">
+	            <li><a href="#" id = "logoutButton">Logout</a></li>
+	          </ul>
+	        </div>
+	      </div>
+	    </nav>
+
+		<div>
+			<h3 class="welcome-text" id='message1'>
+        		<!--filled in by script-->
+        	</h3>
+		</div>
+
+		<div class="animated zoomIn">
+        	<h3 class="number" id='number' align = "center">
+        		<!--filled in by script-->
+        	</h3>
+        </div>
+
+        <div>
+			<h3 class="welcome-text" id='message2'>
+        		<!--filled in by script-->
+        	</h3>
 		</div>
 	</body>
-	<script src="scripts/login.js"></script>	
+	<script src="JavaScript/home.js"></script>	
 </html>
 	
