@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Create Nutrition</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="../css/createCategory.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../splash.html">Transplant Rehabilitation Options</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#" id = "logoutButton">Logout</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row row-offcanvas row-offcanvas-left">
+        <div class="col-sm-3 col-md-2 sidebar-offcanvas">
+          <ul class="nav nav-sidebar" id = 'adminSidebar'>
+            <li><a href="add_patient.html">Add User</a></li>
+            <li><a href="add_plan.html">Add Plan</a></li>
+            <li class="active"><a href="create_nutrition.html">Create Nutrition <span class="sr-only">(current)</span></a></li>
+            <li><a href="create_education.html">Create Education Materials</a></li>
+            <li><a href="create_exercise.html">Create Exercise</a></li>
+            <li><a href="create_medication.html">Create Medication List</a></li>
+            <li><a href="create_survey.html">Create Pain Survey</a></li>
+          </ul>
+          <div id="logo">
+            <img src="../media/penn_logo.png" alt="Penn Logo" style="width:90%;height:90%;">
+          </div>
+        </div>
+        <div class="col-sm-9 col-md-10 main">
+          <!-- Sidebar toggle -->
+          <p class="visible-xs">
+            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">
+              <i class="glyphicon glyphicon-chevron-left"></i>
+            </button>
+          </p>
+
+          <h1 class="page-header">Create Nutrition</h1>
+
+        <div class="footer">
+          <div class="container">
+            <div class = "text">
+              <textarea type="Nutrition Plan Name" id="planname" placeholder="Nutrition Plan Name" cols="80" rows="1"></textarea>
+            </div>
+          </div>
+          <hr>
+
+          <div class="container">
+            <div class = "text">
+              <textarea type="Food Name" id="foodname" placeholder="Food Name" cols="80" rows="1"></textarea>
+            </div>
+          </div>
+
+          <div class="container">
+            <div class = "text">
+              <textarea type="Description" id="description" placeholder="Description" cols="80" rows="15"></textarea>
+            </div>
+          </div>
+
+        <div class="container">
+            <div class = "text">
+              <textarea type="Embed Image Link" id="imagelink" placeholder="Embed Image Link" cols="80" rows="1"></textarea>
+            </div>
+          </div>
+        <hr>
+
+        <div class="form-group">
+          <div class = "col-sm-3 button">
+          <button id = "addbutton" type="button" class="btn btn-primary"> Add Another Food </button>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class = "col-sm-3 button">
+          <button id = "submitbutton" type="button" class="btn btn-primary"> Submit </button>
+          </div>
+        </div>
+
+
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="../assets/js/vendor/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="../scripts/toggle.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.7.3/firebase.js"></script>
+    <script src="../scripts/firebase_init.js"</script>
+    <script src="../scripts/createCategory.js"></script>
+    <script src="../dist/js/jquery.min.js"></script>
+    <script src="../dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
