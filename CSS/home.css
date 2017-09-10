@@ -8,24 +8,6 @@ body {
 p {
   color: #ef311c;
 }
-
-.container {
-    padding: 5vw;
-    position: fixed;
-}
-
-.form-login {
-    background-color: #EDEDED;
-    padding-top: 10px;
-    padding-bottom: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-radius: 15px;
-    border-color:#d2d2d2;
-    border-width: 5px;
-    box-shadow:0 1px 0 #cfcfcf;
-}
-
 .welcome-text {
   font-size: 4vw;
   padding: 4vw;
@@ -49,23 +31,20 @@ p {
 }
 
 .navbar {
-  /*border: 0;
-  background-color: #2d373f;  
-  color: #edf2f7;*/
-
   height: 50px;
   width: 100%;
-  /*margin-bottom: 0;*/
-  border-radius: 0;
   color: #000;
   background-color: #A0D2FF;
+  border-radius: 0;
   border: none;
-
+  overflow: hidden;
 }
 
 .navbar-brand {
   color: #000 !important;
   font-weight: bold;
+  padding: none;
+  float: left;
 }
 
 ul {
@@ -75,6 +54,7 @@ ul {
 
 li {
   float: left;
+  overflow: hidden;
 }
 
 li a {
@@ -83,31 +63,20 @@ li a {
   text-align: center;
   padding: 16.5px 12px;
   text-decoration: none;
+  overflow: hidden;
+
 }
 
 li a:hover {
-  background-color: #111;
+  background-color: #888;
   color: #ffffff;
   text-decoration: none;
 }
 
-.btn, .btn-action {
-    background-color: #2d373f;
-    color: #edf2f7;
-}
 
-.btn:hover {
+.navbar-fixed-top {
+  border: 0;
+  background-color: #2d373f;  
   color: #edf2f7;
-  background-color: #4f6170;
 }
 
-h4 { 
- border:0 solid #fff; 
- border-bottom-width:1px;
- padding-bottom:10px;
- text-align: center;
-}
-
-.form-control {
-    border-radius: 10px;
-}
