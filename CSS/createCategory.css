@@ -72,6 +72,11 @@ li a:hover {
   text-align: center;
 }
 
+#content h1 {
+  font-weight: bold;
+}
+
+
 #submitbutton {
   text-align:center;
 }
@@ -119,25 +124,74 @@ li a:hover {
   background-color: #bababa;
 }
 
-/*::-webkit-scrollbar-track{
-  border-radius: 10px;
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-  -webkit-border-radius: 10px;
+
+
+
+
+
+/* -------------------- Select Box Styles: bavotasan.com Method (with special adaptations by ericrasch.com) */
+/* -------------------- Source: http://bavotasan.com/2011/style-select-box-using-only-css/ */
+#categorySelect {
+  text-align: center;
 }
 
-::-webkit-scrollbar{
-  width: 12px;
+.styled-select {
+   background: url(http://i62.tinypic.com/15xvbd5.png) no-repeat 96% 0;
+   height: 40px;
+   overflow: hidden;
+   width: 310px;
+   display: block;
+   margin: 0 auto;
 }
 
-::-webkit-scrollbar-thumb{
-  border-radius: 10px;
-  background: rgba(255,0,0,0.8);  
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-  -webkit-border-radius: 10px;
+.styled-select select {
+   background: transparent;
+   border: none;
+   font-size: 14px;
+   height: 40px;
+   padding: 10px;
+   width: 325px;
+}
+.semi-square {
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   border-radius: 5px;
 }
 
-::-webkit-scrollbar-thumb:window-inactive {
-  border-radius: 6px;
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-  background-color: #bababa;
-}*/
+.blue    { background-color: #8db2d3; }
+
+.blue select    { color: #fff; }
+
+#amount {
+  width: auto;
+  text-align: center;
+  margin-top: 15px;
+}
+
+input[type=text] {
+    padding: 14px 15px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-group {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#submitbutton {
+  background-color: #8db2d3;
+  text-align: center;
+  width: auto;
+  border: none;
+}
+
+#submitbutton:hover {
+    background-color: #888;
+}
+
+#submitbutton:active {
+    background-color: #333;
+}

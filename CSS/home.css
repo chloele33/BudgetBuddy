@@ -16,6 +16,7 @@ p {
 
 .number {
     font-size: 12vw;
+    font-weight:bold;
 }
 
 .animated {

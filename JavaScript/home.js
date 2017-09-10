@@ -27,7 +27,7 @@
 	var m2 = document.getElementById("message2");
 	m2.innerHTML = "";
 	if (notbroke) {
-		number.style.color = "#61BE50";
+		number.style.color = "#8db2d3";
 		m2.innerHTML = "in your account. " + "You're doing well!";
 	}
 	else {

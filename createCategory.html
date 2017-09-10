@@ -12,7 +12,7 @@
 
     <!-- Bootstrap core CSS -->
     <link href="dist/css/bootstrap.min.css" rel="stylesheet">
-    
+
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
@@ -59,47 +59,35 @@
     </nav> -->
 
     <div class="container-fluid" id = "content">
-        <div class="col-sm-9 col-md-10 main">
         
 
           <h1 class="page-header">Create Category</h1>
-
-        <div class="footer">
-          <div class="container">
-            <div id = "text">
-              <textarea type="Nutrition Plan Name" id="planname" placeholder="Nutrition Plan Name" cols="80" rows="1"></textarea>
-            </div>
-          </div>
-          <hr>
-
-          <div class="container">
-            <div id = "text">
-              <textarea type="Food Name" id="foodname" placeholder="Food Name" cols="80" rows="1"></textarea>
-            </div>
-          </div>
-
-          <div class="container">
-            <div id = "text">
-              <textarea type="Description" id="description" placeholder="Description" cols="80" rows="15"></textarea>
-            </div>
-          </div>
-
-        <div class="container">
-            <div id = "text">
-              <textarea type="Embed Image Link" id="imagelink" placeholder="Embed Image Link" cols="80" rows="1"></textarea>
-            </div>
-          </div>
-        <hr>
-
-        <div class="form-group">
-          <button id = "submitbutton" type="button" class="btn btn-primary"> Submit </button>
-        </div>
-
-
-        </div>
-      </div>
-      </div>
     </div>
+
+    <div class="styled-select blue semi-square" id = "categorySelect">
+            <select id = "spinbox">
+              <option>Please Select a Category</option>
+              <option>Rent</option>
+              <option>Water Bill</option>
+              <option>Electricity Bill</option>
+              <option>Phone Bill</option>
+              <option>Grocery</option>
+              <option>Clothes</option>
+              <option>Meals</option>
+              <option>Books</option>
+              <option>Other</option>
+            </select>
+          </div>
+    </div>
+    <div id = "amount"> 
+      <label for="lname">Planned Amount:  $</label>
+      <input type="text" id="lname" name="lastname" placeholder="00.00">
+    </div>
+
+    <div class="form-group">
+          <button id = "submitbutton" type="button" class="btn btn-primary">Add</button>
+        </div>  
+
   </div>
 
 
@@ -109,14 +97,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
-    <script src="../assets/js/vendor/holder.min.js"></script>
+    <script src="assets/js/vendor/holder.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../assets/js/ie10-viewport-bug-workaround.js"></script>
-    <script src="../scripts/toggle.js"></script>
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
     <script src="https://www.gstatic.com/firebasejs/3.7.3/firebase.js"></script>
-    <script src="../scripts/firebase_init.js"</script>
-    <script src="../scripts/createCategory.js"></script>
-    <script src="../dist/js/jquery.min.js"></script>
-    <script src="../dist/js/bootstrap.min.js"></script>
+    <script src="JavaScript/createCategory.js"></script>
+    <script src="dist/js/jquery.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
   </body>
 </html>

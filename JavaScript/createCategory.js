@@ -1,5 +1,7 @@
 var bLogout = document.getElementById('logoutButton');
 
+var spinBox = document.getElementById('spinbox');
+
 var Foods = [];
 var Descriptions = [];
 var Images = [];
@@ -68,9 +70,9 @@ function savePlan() {
 	});
 }
 
-var addbutton = document.getElementById("addbutton");
+var submitbutton = document.getElementById("submitbutton");
 
-addbutton.onclick = function(){saveExercise()};
+submitbutton.onclick = function(){saveExercise()};
 
 var savebutton = document.getElementById("submitbutton");
 
@@ -83,6 +85,12 @@ bLogout.onclick = function(){
 	reload();
 };
 
+spinBox.onclick = function() {
+	console.log('hello');
+	if (spinBox.value === 'Other') {
+		console.log('hi');
+	}
+}
 
 
 
